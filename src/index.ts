@@ -1,10 +1,12 @@
+import * as dotenv from 'dotenv';
+dotenv.config({ quiet: true });
 import express from 'express';
 import mongoose from 'mongoose';
 import jwt from 'jsonwebtoken';
 import { UserModel } from './db.js';
 
 const app = express();
-
+app.use(express.json());
 
 app.post("/api/v1/signin", async (req, res) => {
     // zod validation, hash the password
@@ -37,6 +39,6 @@ app.post("/api/v1/brain/share", (req, res) => {
 
 })
 
-app.get("/api/v1/brain/:shareLink", (req,res) => {
+app.get("/api/v1/brain/:shareLink", (req, res) => {
 
 })

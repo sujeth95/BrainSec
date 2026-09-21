@@ -13,6 +13,7 @@
   "dependencies": {
     "@types/jsonwebtoken": "^9.0.10",
     "@types/mongoose": "^5.11.96",
+    "dotenv": "^18.0.1",
     "mongoose": "^9.10.1",
     "typescript": "^7.0.2"
   },
