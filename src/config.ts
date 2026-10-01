@@ -1,0 +1,1 @@
+export const JWT_PASSWORD = process.env.PASSWORD || "Critical Error: JWT_SECRET environment variable is missing";
